@@ -28,7 +28,7 @@ const Pokemons = (props) => {
 
   let pokemonComponents = pokemons.map((pokemon) => {
     return (
-      <Pokemon key={pokemon.id} name={pokemon.name} kind={pokemon.kind} />
+      <Pokemon key={pokemon.id} name={pokemon.name} kind={pokemon.kind} abilities={pokemon.abilities} />
     )
   })
 

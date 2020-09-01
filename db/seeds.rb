@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+pikachu = Pokemon.create(name: "Pikachu", kind: "Electric")
+Ability.create(name: "Tackle", pokemon: pikachu)
+Ability.create(name: "Thunderbolt", pokemon: pikachu)
+Ability.create(name: "Static", pokemon: pikachu)
+
+treeko = Pokemon.create(name: "Treeko", kind: "Grass")
+Ability.create(name: "Leer", pokemon: treeko)
+Ability.create(name: "Pound", pokemon: treeko)
+Ability.create(name: "Absorb", pokemon: treeko)
+
+charizard = Pokemon.create(name: "Charizard", kind: "Fire/Flying")
+Ability.create(name: "Growl", pokemon: charizard)
+Ability.create(name: "Smokescreen", pokemon: charizard)
+Ability.create(name: "Flamethrower", pokemon: charizard)
