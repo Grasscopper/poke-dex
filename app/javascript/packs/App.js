@@ -4,7 +4,10 @@ import Pokemons from './Pokemons'
 
 const App = (props) => {
   return (
+    <div>
+    <h1 id="pokedex">Pokédex</h1>
     <Pokemons />
+    </div>
   )
 }
 

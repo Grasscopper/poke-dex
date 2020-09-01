@@ -5,15 +5,22 @@ const Pokemon = (props) => {
 
   let abilityComponents = props.abilities.map((ability) => {
     return (
-      <li><Ability key={ability.id} name={ability.name} /></li>
+      <div className="small-6 ability-small-4">
+      <Ability key={ability.id} name={ability.name} />
+      </div>
     )
   })
 
   return (
     <div>
-    <p>{props.name}</p>
-    <p>{props.kind}</p>
-    <ul>{abilityComponents}</ul>
+    <div className="grid-y">
+    <h2 className="pokemon-name">{props.name}</h2>
+    <p className="ability-name">{props.kind} Type</p>
+    </div>
+    <h4 id="abilities-header">Abilities</h4>
+    <div className="grid-x ability-grid">
+    {abilityComponents}
+    </div>
     </div>
   )
 }
